@@ -1,0 +1,3 @@
+client_id: ENV["DISCORD_CLIENT_ID"]
+token: ENV["DISCORD_TOKEN"]
+prefix: '?'
