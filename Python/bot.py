@@ -26,15 +26,18 @@ async def on_message(message):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
         print("Command executed: " + command)
+        return
 
     if command.startswith('promote'):
         colour=random.randint(0, 0xFFFFFF)
-        embed = discord.Embed(title="Joshs Blog", colour=discord.Colour(colour), url="https://joshglasson.com", description="My personal blog about Software Development, Sports, Music, and any more of my hobbies!", timestamp=datetime.now())
+        dt = datetime.utcnow()
+        embed = discord.Embed(title="Joshs Blog", colour=discord.Colour(colour), url="https://joshglasson.com", description="My personal blog about Software Development, Sports, Music, and any more of my hobbies!", timestamp=dt)
         embed.set_image(url="https://joshglasson.com/logo.png")
         embed.set_thumbnail(url="https://joshglasson.com/logo.png")
         embed.set_author(name="Josh Glasson", url="https://joshglasson.com", icon_url="https://joshglasson.com/logo.png")
         await client.send_message(message.channel, embed=embed)
         print("Command executed: " + command)
+        return
 
     print("Command " + command + " does not match any known commands")
 
