@@ -61,4 +61,4 @@ typings/
 .next
 
 # Config Stuff
-JS/.env
+*/.env
