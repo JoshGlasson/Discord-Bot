@@ -62,3 +62,6 @@ typings/
 
 # Config Stuff
 */.env
+
+# VS Code Stuff
+.vscode
