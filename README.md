@@ -13,10 +13,14 @@ Link to post: [https://joshglasson.com/blog/discord_bot](https://joshglasson.com
 
 ## JS
 
+### Requirements
+
 - Node.js
 - Discord Account
 
 ## Python
+
+### Requirements
 
 - Python 3.7
 - Discord Account
